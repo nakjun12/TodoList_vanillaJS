@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.todo-item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+
+.todo-item input[type="checkbox"] {
+  margin-right: 16px;
+  width: 20px;
+  height: 30px;
+}
+
+.todo-item label {
+  text-align: left; /* 추가 */
+
+  width: 70%;
+}
+
+.todo-item.completed label {
+  text-align: left; /* 추가 */
+  opacity: 0.5;
+
+  width: 70%;
+}
+
+.btn {
+  width: 20%; /* 수정: 70%로 변경 */
+
+  padding: 10px;
+
+  background-color: #4caf50;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.btn-add {
+  width: 100%; /* 수정: 70%로 변경 */
+
+  background-color: #4caf50;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 16px;
+}
+
+#todo-input {
+  margin-top: 20px;
+
+  box-sizing: border-box;
+  border: 1px solid gray;
+  width: calc(100%); /* 100%에서 10px를 뺀 값으로 설정 */
+  outline: none;
+  padding: 10px;
+}
+
+#add-todo-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
