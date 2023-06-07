@@ -1,0 +1,62 @@
+#root {
+  max-width: 1580px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  box-sizing: border-box;
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  gap: 10px;
+}
+
+.input {
+  width: 100%;
+  flow: 1;
+  height: 2rem;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+.btn {
+  white-space: nowrap;
+  margin-left: 10px;
+  height: 100%;
+  background-color: #ccc;
+  border: 1px solid #ccc;
+}
+.btn:hover {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #ccc;
+}
+
+.todo {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.completed {
+  color: #999;
+  background-color: #eee;
+}
+.btn_completed {
+  background-color: gray;
+  color: #999;
+  border: 1px solid #ccc;
+}
