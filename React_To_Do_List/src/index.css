@@ -13,6 +13,14 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+.box {
+  position: relative;
+  z-index: -1;
+}
+.App {
+  position: relative;
+  z-index: -1;
+}
 
 a {
   font-weight: 500;
