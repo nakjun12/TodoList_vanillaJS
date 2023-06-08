@@ -35,15 +35,7 @@ const columns = [
 function Table() {
   return (
     <div className="App">
-      <DataTable
-        title="Movies"
-        columns={columns}
-        data={dummy}
-        defaultSortFieldId={1}
-        sortIcon={<>Sort</>}
-        pagination
-        selectableRows
-      />
+      <DataTable title="Movies" columns={columns} data={dummy} pagination />
     </div>
   );
 }
