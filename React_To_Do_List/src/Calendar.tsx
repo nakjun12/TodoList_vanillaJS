@@ -8,7 +8,6 @@ export type DateProps = {
 };
 
 const Calendar: React.FC<DateProps> = ({ startDate, setStartDate }) => {
-  console.log(startDate);
   const formattedStartDate = startDate.toLocaleDateString("ko-KR", {
     year: "numeric",
     month: "long",
@@ -21,7 +20,6 @@ const Calendar: React.FC<DateProps> = ({ startDate, setStartDate }) => {
 
   return (
     <DatePicker
-      locale={"ko"}
       selected={startDate}
       onChange={(date: Date) => setStartDate(date)}
       dateFormat="yyyy년 MM월 dd일"
