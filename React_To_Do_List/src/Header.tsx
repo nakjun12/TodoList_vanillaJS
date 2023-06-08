@@ -10,6 +10,9 @@ export default function Header() {
         <Link to={`/1`} className="logo">
           TODOS
         </Link>
+        <Link to={`/path/1/detail`} className="logo">
+          Router
+        </Link>
       </div>
       <Link to={`/`} className="logo">
         <div className="logo">Pineone</div>

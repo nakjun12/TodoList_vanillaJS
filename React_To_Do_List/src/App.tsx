@@ -2,6 +2,7 @@ import { FC } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Header from "./Header";
 import Home from "./Home";
+import RouterPage from "./RouterPage";
 import Todos from "./Todos";
 const withLayout = (Component: FC): JSX.Element => {
   return (
@@ -21,6 +22,11 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: withLayout(Home),
+    errorElement: <></>,
+  },
+  {
+    path: "/path/:id/detail",
+    element: withLayout(RouterPage),
     errorElement: <></>,
   },
 ]);
