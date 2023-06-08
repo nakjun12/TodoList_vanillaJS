@@ -1,16 +1,19 @@
 import { Fragment, useEffect, useState } from "react";
+import Calendar from "./Calendar";
 import Todo from "./Todo";
 import "./Todos.css";
-
+import { filterTodosByDate } from "./lib/Helper";
 export type TodoList = {
   todo: string;
   checked: boolean;
+  date: Date;
 };
 
 function Todos() {
   const [todo, setTodo] = useState<TodoList[]>([]);
+  const [selectedTodo, setSelectedTodo] = useState<TodoList[]>([]); // [1
   const [input, setInput] = useState<string>("");
-
+  const [startDate, setStartDate] = useState<Date>(new Date());
   useEffect(() => {
     const storedTodo = localStorage.getItem("todo");
     if (storedTodo) {
@@ -23,6 +26,11 @@ function Todos() {
     }
   }, [todo]);
 
+  useEffect(() => {
+    const filteredTodos = filterTodosByDate(todo, startDate);
+    setSelectedTodo(filteredTodos);
+  }, [startDate, todo]);
+
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInput(e.target.value);
   };
@@ -31,13 +39,14 @@ function Todos() {
       return;
     }
 
-    setTodo([...todo, { todo: input, checked: false }]);
+    setTodo([...todo, { todo: input, checked: false, date: startDate }]);
     setInput("");
   };
-
+  console.log(todo);
   return (
     <main className="box">
       <h1>To_DO_LIST</h1>
+      <Calendar startDate={startDate} setStartDate={setStartDate} />
       <div className="container">
         <input
           type="text"
@@ -55,7 +64,7 @@ function Todos() {
           추가
         </button>
       </div>
-      {todo.map((item: TodoList, index: number) => (
+      {selectedTodo.map((item: TodoList, index: number) => (
         <Fragment key={index}>
           <Todo item={item} index={index} todo={todo} setTodo={setTodo} />
         </Fragment>
