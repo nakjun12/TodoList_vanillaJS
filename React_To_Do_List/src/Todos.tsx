@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import Calendar from "./Calendar";
 import Todo from "./Todo";
 import "./Todos.css";
@@ -14,6 +14,7 @@ function Todos() {
   const [selectedTodo, setSelectedTodo] = useState<TodoList[]>([]); // [1
   const [input, setInput] = useState<string>("");
   const [startDate, setStartDate] = useState<Date>(new Date());
+  const firstRef = useRef<boolean>(false);
   useEffect(() => {
     const storedTodo = localStorage.getItem("todo");
     if (storedTodo) {
@@ -21,8 +22,10 @@ function Todos() {
     }
   }, []);
   useEffect(() => {
-    if (todo.length > 0) {
+    if (firstRef.current) {
       localStorage.setItem("todo", JSON.stringify(todo));
+    } else {
+      firstRef.current = true;
     }
   }, [todo]);
 
@@ -42,7 +45,7 @@ function Todos() {
     setTodo([...todo, { todo: input, checked: false, date: startDate }]);
     setInput("");
   };
-  console.log(todo);
+  console.log(selectedTodo);
   return (
     <main className="box">
       <h1>To_DO_LIST</h1>
@@ -66,7 +69,7 @@ function Todos() {
       </div>
       {selectedTodo.map((item: TodoList, index: number) => (
         <Fragment key={index}>
-          <Todo item={item} index={index} todo={todo} setTodo={setTodo} />
+          <Todo item={item} todo={todo} setTodo={setTodo} />
         </Fragment>
       ))}
     </main>
