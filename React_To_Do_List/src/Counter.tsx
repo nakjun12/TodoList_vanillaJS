@@ -8,6 +8,7 @@ const Counter: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
 
   const handleIncrement = () => {
+    console.log("하이");
     dispatch(increment());
   };
 

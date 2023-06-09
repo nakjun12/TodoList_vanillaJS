@@ -24,11 +24,8 @@ export default function Header() {
           Router
         </Link>
       </div>
-      <Link to={`/`} className="logo">
-        <div className="logo">Pineone</div>
-      </Link>
 
-      <button onClick={handleOpenModal}>모달 열기</button>
+      <button onClick={handleOpenModal}>로그인</button>
     </header>
   );
 }
