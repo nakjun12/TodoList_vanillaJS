@@ -12,15 +12,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  auto-event-tracking: auto;
 }
 .box {
   position: relative;
-  z-index: -1;
 }
 .App {
   position: relative;
-  z-index: -1;
 }
 
 a {
@@ -59,10 +56,6 @@ button {
 button:hover {
   border-color: #646cff;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -86,7 +79,7 @@ button:focus-visible {
   align-items: center;
   justify-content: space-between;
   gap: 50px;
-
+  z-index: 1;
   text-align: center;
 }
 .logo {

@@ -3,9 +3,9 @@ import { useDispatch, useSelector } from "react-redux";
 import type { SignUpData } from "./MemberShip";
 import MemberShip from "./MemberShip";
 import "./Modal.css";
+import { login } from "./lib/redux/loginSlice";
 import { closeModal } from "./lib/redux/modalSlice";
 import { AppDispatch, RootState } from "./lib/redux/store";
-
 const Modal = () => {
   const isModalOpen = useSelector((state: RootState) => state.modal.isOpen);
   const [isMemberShip, setIsMemberShip] = useState(true);
@@ -15,6 +15,7 @@ const Modal = () => {
   const [password, setPassword] = useState("");
 
   const handleUsernameChange = (event: ChangeEvent<HTMLInputElement>) => {
+    event.stopPropagation();
     setUsername(event.target.value);
   };
 
@@ -29,19 +30,20 @@ const Modal = () => {
       alert("모든 항목을 입력해주세요");
       return;
     }
-    const login = MemberShipData.filter((data: SignUpData) => {
+    const logindata = MemberShipData.filter((data: SignUpData) => {
       if (data.username === username && data.password === password) {
         return true;
       } else {
         return false;
       }
     });
-    if (login.length === 0) {
+    if (logindata.length === 0) {
       alert("아이디 또는 비밀번호가 일치하지 않습니다.");
       return;
     }
     alert("로그인 성공");
     dispatch(closeModal());
+    dispatch(login());
     console.log("Username:", username);
     console.log("Password:", password);
     // 모달 닫기
