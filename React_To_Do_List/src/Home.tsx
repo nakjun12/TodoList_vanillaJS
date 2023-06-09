@@ -1,5 +1,4 @@
-import "./Todos.css";
-
+import Counter from "./Counter";
 export type TodoList = {
   todo: string;
   checked: boolean;
@@ -12,6 +11,7 @@ function Home() {
       <div className="container">
         서비스 플랫폼 사업부 황낙준 전임의 TodoList
       </div>
+      <Counter />
     </main>
   );
 }
