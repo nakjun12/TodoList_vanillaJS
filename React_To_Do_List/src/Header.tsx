@@ -12,6 +12,7 @@ export default function Header() {
 
   const logoutHandler = () => {
     dispatch(logout());
+    alert("로그아웃 되었습니다.");
   };
 
   const handleOpenModal = () => {
