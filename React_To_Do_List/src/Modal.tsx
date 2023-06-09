@@ -1,7 +1,7 @@
 import { ChangeEvent, FormEvent, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import type { SignUpData } from "./MemberShip";
-import MemberShip from "./MemberShip";
+import type { SignUpData } from "./Member";
+import MemberShip from "./Member";
 import "./Modal.css";
 import { login } from "./lib/redux/loginSlice";
 import { closeModal } from "./lib/redux/modalSlice";

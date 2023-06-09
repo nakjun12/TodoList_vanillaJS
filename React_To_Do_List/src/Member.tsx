@@ -1,4 +1,4 @@
-import React, {
+import {
   ChangeEvent,
   Dispatch,
   FormEvent,
@@ -68,7 +68,7 @@ function MemberShip({ setIsMemberShip, setMemberShipData }: ModalProps) {
               onChange={handleInputChange}
             />
           </label>
-          <br />
+
           <label>
             비밀번호
             <input
@@ -78,7 +78,7 @@ function MemberShip({ setIsMemberShip, setMemberShipData }: ModalProps) {
               onChange={handleInputChange}
             />
           </label>
-          <br />
+
           <label>
             전자메일
             <input
@@ -88,14 +88,12 @@ function MemberShip({ setIsMemberShip, setMemberShipData }: ModalProps) {
               onChange={handleInputChange}
             />
           </label>
-          <br />
-          <br />
+
           <button type="submit">회원 가입</button>
           <button type="button" onClick={() => setIsMemberShip(true)}>
             돌아가기
           </button>
         </form>
-        <br />
       </div>
     </div>
   );
