@@ -1,9 +1,9 @@
 import { FC } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Header from "./Header";
+import Header from "./component/Header";
+import RouterPage from "./component/RouterPage";
+import Todos from "./component/Todos";
 import Home from "./Home";
-import RouterPage from "./RouterPage";
-import Todos from "./Todos";
 
 const withLayout = (Component: FC): JSX.Element => {
   return (
