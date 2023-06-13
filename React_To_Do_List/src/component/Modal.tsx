@@ -1,11 +1,11 @@
 import { ChangeEvent, FormEvent, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { login } from "../lib/redux/loginSlice";
+import { closeModal } from "../lib/redux/modalSlice";
+import { AppDispatch, RootState } from "../lib/redux/store";
 import type { SignUpData } from "./Member";
 import MemberShip from "./Member";
 import "./Modal.css";
-import { login } from "./lib/redux/loginSlice";
-import { closeModal } from "./lib/redux/modalSlice";
-import { AppDispatch, RootState } from "./lib/redux/store";
 const Modal = () => {
   const isModalOpen = useSelector((state: RootState) => state.modal.isOpen);
   const [isMemberShip, setIsMemberShip] = useState(true);

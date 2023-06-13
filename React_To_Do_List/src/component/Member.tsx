@@ -6,8 +6,8 @@ import {
   useState,
 } from "react";
 import { useDispatch } from "react-redux";
-import { closeModal } from "./lib/redux/modalSlice";
-import { AppDispatch } from "./lib/redux/store";
+import { closeModal } from "../lib/redux/modalSlice";
+import { AppDispatch } from "../lib/redux/store";
 interface ModalProps {
   setIsMemberShip: Dispatch<SetStateAction<boolean>>;
   setMemberShipData: Dispatch<SetStateAction<SignUpData[]>>;

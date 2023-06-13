@@ -1,5 +1,5 @@
 import DataTable from "react-data-table-component";
-import dummy from "./lib/dummy";
+import dummy from "../lib/dummy";
 
 type Movie = {
   id: number;

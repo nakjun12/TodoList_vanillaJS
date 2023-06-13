@@ -1,4 +1,4 @@
-import Counter from "./Counter";
+import Counter from "./component/Counter";
 export type TodoList = {
   todo: string;
   checked: boolean;
