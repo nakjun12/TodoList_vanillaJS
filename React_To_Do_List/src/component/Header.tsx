@@ -1,9 +1,9 @@
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import Modal from "./Modal";
-import { logout } from "./lib/redux/loginSlice";
-import { openModal } from "./lib/redux/modalSlice";
-import { AppDispatch, RootState } from "./lib/redux/store";
+import Modal from "../Modal";
+import { logout } from "../lib/redux/loginSlice";
+import { openModal } from "../lib/redux/modalSlice";
+import { AppDispatch, RootState } from "../lib/redux/store";
 export default function Header() {
   // 모달 상태 가져오기
   const dispatch = useDispatch<AppDispatch>();

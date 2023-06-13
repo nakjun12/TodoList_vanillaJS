@@ -1,6 +1,6 @@
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import CoustomInput from "./CoustomInput";
+import CoustomInput from "../CoustomInput";
 
 export type DateProps = {
   startDate: Date;
