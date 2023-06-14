@@ -1,0 +1,10 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 48px 60px 0 56px;
+  background-color: #1b1f27;
+}

@@ -1,7 +1,7 @@
 import { Fragment, useEffect, useRef, useState } from "react";
+import Calendar from "../component/Calendar";
+import Todo from "../component/Todo";
 import { filterTodosByDate } from "../lib/Helper";
-import Calendar from "./Calendar";
-import Todo from "./Todo";
 import "./Todos.css";
 
 export type TodoList = {

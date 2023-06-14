@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Table from "./Table";
+import Table from "./component/Table";
 function RouterPage() {
   return (
     <main className="box">

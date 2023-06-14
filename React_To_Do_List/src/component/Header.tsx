@@ -20,25 +20,30 @@ export default function Header() {
   };
 
   return (
-    <header className="header">
-      <Modal />
-      <div>
-        <Link to={`/`} className="logo">
-          HOME
-        </Link>
-        <Link to={`/1`} className="logo">
-          TODOS
-        </Link>
-        <Link to={`/path/1/detail`} className="logo">
-          Router
-        </Link>
-      </div>
+    <>
+      <header className="header">
+        <div>
+          <Link to={`/`} className="logo">
+            HOME
+          </Link>
+          <Link to={`/1`} className="logo">
+            TODOS
+          </Link>
+          <Link to={`/path/1/detail`} className="logo">
+            Router
+          </Link>
+          <Link to={`/spatial`} className="logo">
+            Spatial
+          </Link>
+        </div>
 
-      {!login ? (
-        <button onClick={handleOpenModal}> 로그인 </button>
-      ) : (
-        <button onClick={logoutHandler}> 로그아웃</button>
-      )}
-    </header>
+        {!login ? (
+          <button onClick={handleOpenModal}> 로그인 </button>
+        ) : (
+          <button onClick={logoutHandler}> 로그아웃</button>
+        )}
+      </header>
+      <Modal />
+    </>
   );
 }

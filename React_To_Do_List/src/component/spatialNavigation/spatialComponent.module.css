@@ -1,0 +1,217 @@
+.header {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+}
+
+.right_span {
+  width: 72px;
+  height: 28px;
+  flex-grow: 0;
+  font-family: NotoSansKR;
+  font-size: fit-content;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: -0.6px;
+  text-align: left;
+  color: #a5a5a5;
+}
+
+.Etc_Direction_Induction_Key {
+  width: 144px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 0 20px 33px 964px;
+  padding: 0;
+}
+
+img.ic_search_white_24 {
+  width: 24px;
+  height: 24px;
+  flex-grow: 0;
+  object-fit: contain;
+  opacity: 0.5;
+}
+
+.ic_arw_2line_up_mix_24 {
+  width: 24px;
+  height: 24px;
+  flex-grow: 0;
+  object-fit: contain;
+}
+.right_header {
+  width: 100%;
+  height: 41px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 0;
+}
+.right_header_em {
+  height: 41px;
+  white-space: nowrap;
+  font-family: NotoSansKR;
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.28;
+
+  color: #fff;
+  width: auto;
+}
+.right_header_font {
+  width: auto;
+  height: 41px;
+  flex-grow: 0;
+  white-space: nowrap;
+  font-family: NotoSansKR;
+  font-size: 32px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.28;
+  letter-spacing: -0.6px;
+
+  color: #c1c1c1;
+}
+
+.span_group {
+  width: auto;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 18px;
+
+  padding: 0;
+}
+.span_group > span {
+  white-space: nowrap;
+  width: auto;
+  height: 48px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 16px 8px;
+  border-radius: 45px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.Text {
+  width: 135px;
+  height: 34px;
+  flex-grow: 0;
+  font-family: NotoSansKR;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: -0.6px;
+  text-align: center;
+  color: #c1c1c1;
+}
+
+.Tab_DropLanding {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: 80px;
+  margin: 40px 0 60px;
+}
+.Tab_DropLanding > div {
+  width: 224px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 12px 0 0;
+
+  border-radius: 40px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.Tab_DropLanding > div > div {
+  width: 188px;
+  height: 70px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  font-family: NotoSansKR;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+
+  text-align: center;
+  color: #fff;
+  padding: 17px 40px 19px;
+  border-radius: 50px;
+  border: none;
+  background-color: transparent;
+}
+.Vertical_Landing {
+  box-sizing: border-box;
+  width: 100%;
+  height: 80px;
+  margin: 0;
+  padding: 5px;
+  border-radius: 40px;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.Vertical_State_Default {
+  width: auto;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 17px 40px 19px;
+  border-radius: 45px;
+
+  font-family: NotoSansKR;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: -0.6px;
+  text-align: center;
+  background-color: transparent;
+  color: #fff;
+}
+.Vertical_State_Focus {
+  width: auto;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 17px 40px 19px;
+  border-radius: 45px;
+
+  font-family: NotoSansKR;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: -0.6px;
+  text-align: center;
+  background-color: #fff;
+
+  color: #242424;
+}

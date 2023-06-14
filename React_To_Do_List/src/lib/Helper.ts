@@ -1,4 +1,4 @@
-import type { TodoList } from "../component/Todos";
+import type { TodoList } from "../todos/Todos";
 
 const filterTodosByDate = (todos: TodoList[], date: Date): TodoList[] => {
   const filteredTodos = todos.filter((item) => {
