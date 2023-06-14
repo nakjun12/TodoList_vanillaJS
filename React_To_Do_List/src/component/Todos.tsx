@@ -3,6 +3,7 @@ import { filterTodosByDate } from "../lib/Helper";
 import Calendar from "./Calendar";
 import Todo from "./Todo";
 import "./Todos.css";
+
 export type TodoList = {
   todo: string;
   checked: boolean;
