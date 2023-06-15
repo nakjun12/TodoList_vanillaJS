@@ -236,3 +236,24 @@ img.ic_search_white_24 {
 
   color: #242424;
 }
+
+.Vertical_State_Choice {
+  width: auto;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 17px 40px 19px;
+  border-radius: 45px;
+  margin: 0 12px 0 0;
+  font-family: NotoSansKR;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: -0.6px;
+  gap: 6px;
+  padding: 17px 40px 19px;
+  border-radius: 45px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
