@@ -7,7 +7,7 @@ export default function SpatialNavigation({}: Props) {
   return (
     <main className={styles.container}>
       <Resultbar />
-      <FocusTable focusKey="MENU" />
+      <FocusTable />
     </main>
   );
 }
